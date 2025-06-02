@@ -9,7 +9,7 @@
 Create a `.env` file in the project root with your environment variables, for example:
 
 ```env
-COHERE_API_KEY=...
+COHERE_API_KEYyour_cohere_api_key_here
 DATABASE_URL=postgresql+asyncpg://postgres:postgres@db:5432/postgres
 ```
 
@@ -41,6 +41,18 @@ exit
 
 - Backend is available at: [http://localhost:8000](http://localhost:8000)
 - Frontend is available at: [http://localhost:3000](http://localhost:3000)
+  
+## 5. Running Tests
+
+### Backend Tests
+
+To run backend tests, execute:
+
+```bash
+docker exec -it supportai-backend-1 sh
+cd /backend
+pytest
+
 
 
 ### Important Tips
