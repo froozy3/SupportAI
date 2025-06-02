@@ -1,5 +1,8 @@
 
 # SupportAI — Quick Start
+![image](https://github.com/user-attachments/assets/e97b6577-bf25-430d-8923-2c877f631f57)
+
+
 
 ## 0. Create `.env` file
 
@@ -8,13 +11,14 @@ Create a `.env` file in the project root with your environment variables, for ex
 ```env
 COHERE_API_KEY=...
 DATABASE_URL=postgresql+asyncpg://postgres:postgres@db:5432/postgres
+```
 
 
 ## 1. Clone repository
 
 ```bash
-git clone https://github.com/froozy3/SupportAI
-cd SupportAI--master
+git clone https://github.com/froozy3/SupportAI.git
+Then open the SupportAI folder in your IDE (VSCode, PyCharm, etc.)
 ```
 
 ## 2. Building and launching containers
@@ -27,7 +31,7 @@ docker-compose up -d
 ## 3. Applying Database Migrations
 
 ```bash
-docker exec -it supportai--master-backend-1 sh
+docker exec -it supportai-backend-1 sh
 cd /backend
 alembic upgrade head
 exit
