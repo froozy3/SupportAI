@@ -8,6 +8,7 @@ Create a `.env` file in the project root with your environment variables, for ex
 ```env
 COHERE_API_KEY=...
 DATABASE_URL=postgresql+asyncpg://postgres:postgres@db:5432/postgres
+```
 
 
 ## 1. Clone repository
