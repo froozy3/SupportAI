@@ -9,7 +9,7 @@
 Create a `.env` file in the project root with your environment variables, for example:
 
 ```env
-COHERE_API_KEYyour_cohere_api_key_here
+COHERE_API_KEY=your_cohere_api_key_here
 DATABASE_URL=postgresql+asyncpg://postgres:postgres@db:5432/postgres
 ```
 
