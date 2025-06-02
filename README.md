@@ -41,6 +41,24 @@ exit
 
 - Backend is available at: [http://localhost:8000](http://localhost:8000)
 - Frontend is available at: [http://localhost:3000](http://localhost:3000)
+- *FAQ Context Data*
+
+The application uses a predefined set of FAQ answers stored in the `FAQ_DATA` variable.  
+Only the following answers are included in the context for AI retrieval:
+
+| Question                                        | Answer                                         |
+|------------------------------------------------|-----------------------------------------------|
+| How can I get a refund?                         | To get a refund, submit a request within 14 days. |
+| What are your working hours?                    | We work from 9 AM to 6 PM on weekdays.         |
+| How can I change my password?                   | You can change your password via 'Forgot Password?'. |
+| How long does delivery take?                    | Delivery takes 3 to 5 business days.           |
+| How can I contact support?                      | Support is available by phone and chat.        |
+| How long does registration take?                | Registration takes no more than 2 minutes.     |
+| How can I recover my account?                   | To recover your account, use your email or phone number. |
+
+This means the AI will only answer questions related to these specific FAQ entries. You can combined answers.
+
+
   
 ## 5. Running Tests
 
@@ -52,6 +70,8 @@ To run backend tests, execute:
 docker exec -it supportai-backend-1 sh
 cd /backend
 pytest
+
+
 
 
 
