@@ -1,10 +1,4 @@
-from ast import mod
-from datetime import datetime
-import os
-from pydoc import text
-
 import cohere
-import asyncio
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
@@ -70,7 +64,6 @@ async def request_to_AI(question: str, context: list[str]) -> UserResponse:
         messages=[cohere.UserChatMessageV2(content=prompt)],
     )
     answer = response.message.content[0].text
-    print(f"{answer=}")
     return UserResponse(response=answer, context=context)
 
 
