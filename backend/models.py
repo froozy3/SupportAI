@@ -1,6 +1,4 @@
 from datetime import datetime
-from annotated_types import T
-from sqlalchemy import DateTime
 from sqlalchemy.orm import DeclarativeBase, mapped_column, Mapped
 
 

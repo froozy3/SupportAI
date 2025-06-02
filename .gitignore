@@ -4,3 +4,4 @@
 /backend/.env/.vscode
 /frontend/node_modules/
 .vscode
+.pytest_cache
