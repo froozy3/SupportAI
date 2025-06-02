@@ -56,7 +56,7 @@ Only the following answers are included in the context for AI retrieval:
 | How long does registration take?                | Registration takes no more than 2 minutes.     |
 | How can I recover my account?                   | To recover your account, use your email or phone number. |
 
-This means the AI will only answer questions related to these specific FAQ entries. You can combined answers.
+This means the AI will only answer questions related to these specific FAQ entries. You can combined asks.
 
 
   
